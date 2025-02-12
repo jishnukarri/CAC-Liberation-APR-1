@@ -321,15 +321,16 @@ KPLIB_b_vehSupport = [
     ["USAF_SlingLoad_Repair",50,0,0],                   // M977A4 Ammo
     ["B_Slingload_01_Repair_F",50,0,0],                                // Huron Repair
     ["B_Slingload_01_Fuel_F",50,0,0],                                 // Huron Fuel
-    ["B_Slingload_01_Ammo_F",50,0,0],                                  // Huron Ammo
+    ["B_Slingload_01_Ammo_F",50,0,0]
+];
+
+/*
+,                                  // Huron Ammo
     ["CAC_AA_Launchers_Ammo",0,0,0],
     ["CAC_AA_Launchers",0,0,0],
     ["CAC_AA_Jav_Launchers",0,0,0],
     ["CAC_AA_Fim_Launchers",0,0,0],
     ["CAC_Drones",0,0,0]
-];
-
-/*
     --- Squads ---
     Pre-made squads for the commander build menu.
     These shouldn't exceed 10 members.
