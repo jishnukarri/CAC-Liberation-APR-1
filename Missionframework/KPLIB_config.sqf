@@ -55,6 +55,7 @@
 	31 = Project OPFOR African Militia ("better equipped")
 	32 = Lingor Resistencia
     33 = Armed Forces of Chernarus (BLUFOR)
+    34 = CUP US Marine Corps Early 2000s (Desert) - Iraq
 */
 KPLIB_presetPlayer = 0;
 
@@ -84,6 +85,7 @@ KPLIB_presetPlayer = 0;
 	21 = Project OPFOR African Militia ("better equipped")
 	22 = Lingor Revolución
     23 = Chernarus Armed Forces (OPFOR)
+    24 = CUP Iraqi Armed Forces (Desert)
 */
 KPLIB_presetEnemy = 0;
 
@@ -139,6 +141,7 @@ KPLIB_presetCivilians = 0;
 	17 = Central africa (para) military
 	18 = Lingor
     19 = Armed Forces of Chernarus (BLUFOR)
+    20 = CUP USMC Early 2000s (Desert) - Iraq
 */
 KPLIB_presetArsenal = 0;
 
@@ -199,10 +202,10 @@ KPLIB_save_interval = 60;
 */
 
 // Build range around the main FOB building.
-KPLIB_range_fob = 125;
+KPLIB_range_fob = 200;
 
 // Altitude in metres for the HALO jump.
-KPLIB_height_halo = 2500;
+KPLIB_height_halo = 1000;
 
 // Range to activate a sector.
 KPLIB_range_sectorActivation   = 1000;
@@ -377,16 +380,16 @@ KPLIB_resistance_ambush_chance = 25;
 */
 
 // Time in minutes until a resource crate is produced, when resources multiplier is set to 1.
-KPLIB_production_interval = 30;
+KPLIB_production_interval = 2;
 
 // Percentage of resources you get back from recycling.
-KPLIB_recycling_percentage = 0.5;
+KPLIB_recycling_percentage = 0.7;
 
 // Multiplier for defenders in buildings.
-KPLIB_defended_buildingpos_part = 0.4;
+KPLIB_defended_buildingpos_part = 1.4;
 
 // Time in seconds how long a captured sector is vulnerable to enemy troops.
-KPLIB_vulnerability_timer = 1200;
+KPLIB_vulnerability_timer = 2200;
 
 // Chance that enemy infantry will surrender after heavy losses are encountered.
 KPLIB_surrender_chance = 80;

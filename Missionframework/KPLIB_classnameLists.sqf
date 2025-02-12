@@ -113,14 +113,6 @@ KPLIB_ace_crates = [
 
 // Classnames of exotic crates
 KPLIB_gear_crates = [
-    "B_LINGOR_IglaBox",
-    "B_AFBiH_IglaBox",
-    "B_AFBiH_FNMagBox",
-    "B_AFBiH_SPG9Box",
-    "B_AFBiH_KORDBox",
-    "B_AFBiH_M2Box",
-    "B_AFBiH_2B14Box",
-    "B_AFBiH_M80Box"
 ];
 
 // Everything the AI troups should be able to resupply from.
@@ -561,7 +553,7 @@ KPLIB_intelBuildingClasses = [
 // Array of radio tower classnames to place at radio tower sectors. If more than one is added, it'll be selected random for each sector on campaign start.
 KPLIB_radioTowerClassnames = [
     "Land_Communication_F",
-    "TFAR_Land_Communication_F",
+   // "TFAR_Land_Communication_F",
 	"Land_TTowerBig_2_F",
 	"Land_TTowerBig_1_F",
 	"Land_Vysilac_vez"
@@ -631,7 +623,7 @@ KPLIB_collisionIgnoreObjects = [
     "B_static_AT_F",                                                    // Static Titan Launcher (AT)
     "B_static_AA_F",                                                    // Static Titan Launcher (AA)
     "B_Mortar_01_F",                                                    // Mk6 Mortar
-    "TFAR_Land_Communication_F",
+   // "TFAR_Land_Communication_F",
     "ACE_friesAnchorBar",                                               // ACE FRIES
     "ACE_friesGantryReverse",                                           // ACE FRIES
     "ACE_friesGantry",                                                  // ACE FRIES

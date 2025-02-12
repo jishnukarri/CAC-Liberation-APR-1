@@ -24,41 +24,41 @@ if !(isPlayer _player) exitWith {["No player given"] call BIS_fnc_error; false};
 if (isNil "KPLIB_resources_global") then {KPLIB_resources_global = false;};
 
 // Tutorial
-// _player addAction [
-//     ["<t color='#80FF80'>", localize "STR_TUTO_ACTION", "</t>"] joinString "",
-//     {howtoplay = 1;},
-//     nil,
-//     -700,
-//     false,
-//     true,
-//     "",
-//     "
-//         alive _originalTarget
-//         && {_originalTarget getVariable ['KPLIB_isNearStart', false]}
-//     "
-// ];
+_player addAction [
+    ["<t color='#80FF80'>", localize "STR_TUTO_ACTION", "</t>"] joinString "",
+    {howtoplay = 1;},
+    nil,
+    -700,
+    false,
+    true,
+    "",
+    "
+        alive _originalTarget
+        && {_originalTarget getVariable ['KPLIB_isNearStart', false]}
+    "
+];
 // 
 // HALO
-// _player addAction [
-//     ["<t color='#80FF80'>", localize "STR_HALO_ACTION", "</t><img size='2' image='res\ui_redeploy.paa'/>"] joinString "",
-//     "scripts\client\spawn\do_halo.sqf",
-//     nil,
-//     -710,
-//     false,
-//     true,
-//     "",
-//     "
-//         KPLIB_param_halo > 0
-//         && {isNull (objectParent _originalTarget)}
-//         && {alive _originalTarget}
-//         && {
-//             _originalTarget getVariable ['KPLIB_fobDist', 99999] < 20
-//             || {_originalTarget getVariable ['KPLIB_isNearStart', false]}
-//         }
-//         && {build_confirmed isEqualTo 0}
-//     "
-// ];
-// 
+_player addAction [
+    ["<t color='#80FF80'>", localize "STR_HALO_ACTION", "</t><img size='2' image='res\ui_redeploy.paa'/>"] joinString "",
+    "scripts\client\spawn\do_halo.sqf",
+    nil,
+    -710,
+    false,
+    true,
+    "",
+    "
+        KPLIB_param_halo > 0
+        && {isNull (objectParent _originalTarget)}
+        && {alive _originalTarget}
+        && {
+            _originalTarget getVariable ['KPLIB_fobDist', 99999] < 20
+            || {_originalTarget getVariable ['KPLIB_isNearStart', false]}
+        }
+        && {build_confirmed isEqualTo 0}
+    "
+];
+
 // Redeploy
 _player addAction [
     ["<t color='#80FF80'>", localize "STR_DEPLOY_ACTION", "</t><img size='2' image='res\ui_redeploy.paa'/>"] joinString "",
@@ -81,22 +81,22 @@ _player addAction [
 ];
 
 // Squad management
-//_player addAction [
-//    ["<t color='#80FF80'>", localize "STR_SQUAD_MANAGEMENT_ACTION", "</t><img size='2' image='\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\modeGroups_ca.paa'/>"] joinString "",
-//    "scripts\client\ui\squad_management.sqf",
-//    nil,
-//    -730,
-//    false,
-//    true,
-//    "",
-//    "
-//        isNull (objectParent _originalTarget)
-//        && {alive _originalTarget}
-//        && {!((units group _originalTarget) isEqualTo [_originalTarget])}
-//        && {(leader group _originalTarget) isEqualTo _originalTarget}
-//        && {build_confirmed isEqualTo 0}
-//    "
-//];
+_player addAction [
+   ["<t color='#80FF80'>", localize "STR_SQUAD_MANAGEMENT_ACTION", "</t><img size='2' image='\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\modeGroups_ca.paa'/>"] joinString "",
+   "scripts\client\ui\squad_management.sqf",
+   nil,
+   -730,
+   false,
+   true,
+   "",
+   "
+       isNull (objectParent _originalTarget)
+       && {alive _originalTarget}
+       && {!((units group _originalTarget) isEqualTo [_originalTarget])}
+       && {(leader group _originalTarget) isEqualTo _originalTarget}
+       && {build_confirmed isEqualTo 0}
+   "
+];
 
 // Arsenal
 _player addAction [

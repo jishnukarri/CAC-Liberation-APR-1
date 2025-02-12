@@ -25,7 +25,7 @@ class Header {
 };
 
 // Name of Mission author(s) and contributors. Obviously you can only add and not (!) remove someone.
-author = "[GREUH], [KP], Apricot-ale, Doxus, CarlMylo, TiredSloth, Pantteri";
+author = "[GREUH], [KP], Apricot-ale, Moist Contibuters, Phantom";
 
 
 /*
@@ -64,7 +64,7 @@ onLoadMission = "";
 */
 
 // Enable or disable the respawn button in the menu for INSTANT and BASE respawn types.
-respawnButton = 0;
+respawnButton = 1;
 
 // Templates are pre-defined scripts called when player dies and respawns. They are defined in an array and can be combined together.
 // List of pre-defined variants: https://community.bistudio.com/wiki/Arma_3_Respawn#Official_Templates
@@ -87,7 +87,7 @@ respawnTemplates[] = {};
 respawn = 3;
 
 // Set respawn delay in seconds.
-respawndelay = 10;
+respawndelay = 2;
 
 // Show the scoreboard and respawn countdown timer for a player if he is killed with respawn type BASE.
 respawnDialog = 0;
@@ -96,7 +96,7 @@ respawnDialog = 0;
 // -1 - Dont respawn on start. Don't run respawn script on start.
 //  0 - Dont respawn on start. Run respawn script on start.
 //  1 - Respawn on start. Run respawn script on start.
-respawnOnStart = 0;
+respawnOnStart = 1;
 
 
 /*
@@ -111,13 +111,13 @@ respawnOnStart = 0;
 corpseManagerMode = 1;
 
 // Corpse limit before which (<=) corpseRemovalMaxTime applies and after which (>) corpseRemovalMinTime applies.
-corpseLimit = 50;
+corpseLimit = 10;
 
 // Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is reached.
-corpseRemovalMinTime = 600;
+corpseRemovalMinTime = 100;
 
 // Maximum time a corpse can remain on the ground if total number of corpses is equal or under corpseLimit.
-corpseRemovalMaxTime = 3600;
+corpseRemovalMaxTime = 600;
 
 // Sets the mode for wreck removal manager.
 // 0 = None                 - None of the vehicles are managed by the manager
@@ -127,16 +127,16 @@ corpseRemovalMaxTime = 3600;
 wreckManagerMode = 1;
 
 // Vehicle wreck limit before which (<=) wreckRemovalMaxTime applies and after which (>) wreckRemovalMinTime applies.
-wreckLimit = 20;
+wreckLimit = 3;
 
 // Remove all wrecks that have existed longer than wreckRemovalMinTime when wreckLimit is breached.
-wreckRemovalMinTime = 1200;
+wreckRemovalMinTime = 100;
 
 // Maximum time a wreck can remain on the ground if total number of wrecks is equal or under wreckLimit.
-wreckRemovalMaxTime = 7200;
+wreckRemovalMaxTime = 600;
 
 // The minimum distance between corpse or wreck and nearest player before the corpse or wreck is allowed to be removed by the garbage collector.
-minPlayerDistance = 1000;
+minPlayerDistance = 500;
 
 
 /*
@@ -221,7 +221,7 @@ class CfgDiscordRichPresence {
     defaultDetails="";
     defaultState="Preparing...";
     defaultLargeImageKey="liberation_logo";
-    defaultLargeImageText="Moist Liberation";
+    defaultLargeImageText="CAC Liberation";
     defaultSmallImageKey="arma3_logo";
     defaultSmallImageText="Arma 3";
     useTimeElapsed=1;
@@ -256,10 +256,16 @@ class ACEX_Fortify_Presets {
     class KPLIB_Fortify {
         displayName = "KPLIB Fortify";
         objects[] = {
-			{"Land_Campfire_F", 1},
-			{"CamoNet_wdl_open_F", 30},
-            {"Land_BagFence_Short_F", 50},
-            {"Land_BagFence_Round_F", 60}
+			{"Land_BagFence_Round_F", 5},
+            {"Land_BagFence_Short_F", 5},
+            {"Land_BagFence_Long_F", 10},
+            {"Land_Plank_01_4m_F", 10},
+            {"Land_BagBunker_Small_F", 25},
+            {"Land_Razorwire_F", 10},
+            {"RoadBarrier_F", 1},
+            {"RoadCone_F", 1},
+            {"Land_Campfire_F", 1},
+            {"CamoNet_wdl_open_F", 30}
         };
     };
 };

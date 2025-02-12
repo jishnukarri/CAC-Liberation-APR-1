@@ -13,7 +13,7 @@
 
     Returns:
         Function reached the end [BOOL]
-*/
+
 
 params [
     ["_player", player, [objNull]]
@@ -22,3 +22,4 @@ params [
 [true, "KPLIB_createZeus", [_player, KPLIB_param_zeusLimited]] remoteExecCall ["BIS_fnc_callScriptedEventHandler", 2];
 
 true
+*/
