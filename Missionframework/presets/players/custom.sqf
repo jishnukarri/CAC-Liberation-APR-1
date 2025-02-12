@@ -28,7 +28,7 @@ KPLIB_b_fobBuilding     = "Land_Cargo_HQ_V3_F";                         // This 
 KPLIB_b_fobBox          = "Base_WarfareBContructionSite";                     // This is the FOB as a container.
 KPLIB_b_fobTruck        = "B_Truck_01_box_F";                           // This is the FOB as a vehicle.
 KPLIB_b_arsenal         = "AmmoCrates_NoInteractive_Medium";                            // This is the virtual arsenal as portable supply crates.
-KPLIB_b_mobileRespawn = ["CUP_B_BAF_Coyote_L2A1_D", "CUP_B_RHIB2Turret_USMC", "CFP_B_USARMY_2003_MH_6J_Little_Bird_DES_01"];                           // This is the mobile respawn (and medical) truck.
+KPLIB_b_mobileRespawn = ["CFP_B_USARMY_2003_HMMWV_Transport_DES_01", "CFP_B_USMC_Zodiac_DES_01", "CFP_B_USARMY_2003_MH_6J_Little_Bird_DES_01"];                           // This is the mobile respawn (and medical) truck.
 KPLIB_b_potato01        = "CFP_B_USARMY_2003_CH_47F_VIV_DES_01";              // This is Potato 01, a multipurpose mobile respawn as a helicopter.
 KPLIB_b_crewUnit        = "CFP_B_USARMY_2003_Crewman_DES_01";                                   // This defines the crew for vehicles.
 KPLIB_b_heliPilotUnit   = "CFP_B_USARMY_2003_Pilot_DES_01";                              // This defines the pilot for helicopters.
@@ -88,7 +88,6 @@ KPLIB_b_infantry = [
 KPLIB_b_vehLight = [
     ["CFP_B_USARMY_2003_HMMWV_Unarmed_DES_01",10,10,20],                                     //CFP_B_USARMY_2003_HMMWV_Unarmed_DES_01
     ["CFP_B_USARMY_2003_M1151_Unarmed_DES_01",10,10,20],
-    ["CFP_B_USARMY_2003_HMMWV_Transport_DES_01",20,10,20],
     ["CFP_B_USARMY_2003_MTVR_DES_01",20,10,10],
     ["CFP_B_USARMY_2003_HMMWV_Ambulance_DES_01",10,5,5],
     ["CFP_B_USARMY_2003_M1152_ECV_DES_01",10,0,0],
