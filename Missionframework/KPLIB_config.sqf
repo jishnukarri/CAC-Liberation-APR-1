@@ -102,7 +102,7 @@ KPLIB_presetEnemy = 0;
     8  = CUP National Party of Chernarus
 	9  = Lingor
 */
-KPLIB_presetResistance = 0;
+KPLIB_presetResistance = 7;
 
 /*
     ----- Civilians preset -----
@@ -117,7 +117,7 @@ KPLIB_presetResistance = 0;
 	8  = Lingor Civilians
     9 =  Chernarus 90s
 */
-KPLIB_presetCivilians = 0;
+KPLIB_presetCivilians = 6;
 
 /*
     ----- Arsenal preset -----
@@ -143,7 +143,7 @@ KPLIB_presetCivilians = 0;
     19 = Armed Forces of Chernarus (BLUFOR)
     20 = CUP USMC Early 2000s (Desert) - Iraq
 */
-KPLIB_presetArsenal = 0;
+KPLIB_presetArsenal = 1;
 
 
 /*
