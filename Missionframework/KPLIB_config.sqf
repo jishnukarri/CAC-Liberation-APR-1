@@ -210,15 +210,15 @@ KPLIB_height_halo = 1000;
 // Range to activate a sector.
 KPLIB_range_sectorActivation   = 1000;
 KPLIB_range_capitalActivation  = 1000;
-KPLIB_range_cityActivation     = 500;
-KPLIB_range_factoryActivation  = 150;
+KPLIB_range_cityActivation     = 750;
+KPLIB_range_factoryActivation  = 750;
 KPLIB_range_militaryActivation = 1200;
-KPLIB_range_towerActivation    = 250;
+KPLIB_range_towerActivation    = 500;
 KPLIB_range_airSpawnActivation = 500;
 KPLIB_range_pointActivation    = 300;
 
 // Range to capture a sector.
-KPLIB_range_sectorCapture = 175;
+KPLIB_range_sectorCapture = 200;
 
 // Radio Tower scanning range.
 KPLIB_range_radioTowerScan = 2500;
@@ -299,7 +299,7 @@ KPLIB_cr_wounded_gain = 2;
 KPLIB_secondary_missions_costs = [15, 10, 8, 8, 8, 8];
 
 // Proportionate reduction of the actual (!) enemy combat readiness for a successful FOB hunt. (e.g. 0.4 -> reduction of 24 by an actual value of 60)
-KPLIB_secondary_objective_impact = 0.4;
+KPLIB_secondary_objective_impact = 0.9;
 
 // The percentage increase received when completing a Humanitarian Aid secondary objective
 KPLIB_secondary_objective_civ_supplies_impact = 5;
@@ -317,13 +317,13 @@ KPLIB_civinfo_chance = 75;
 KPLIB_civinfo_intel = 5;
 
 // Time until a civil informant will despawn after spawning. (seconds)
-KPLIB_civinfo_duration = 1200;
+KPLIB_civinfo_duration = 2100;
 
 // Chance (0-100) that the delivered informant will spawn a time critical task
 KPLIB_civinfo_task_chance = 40;
 
 // Time until the task will despawn if no player is near. (seconds)
-KPLIB_civinfo_task_duration = 900;
+KPLIB_civinfo_task_duration = 1500;
 
 
 /*
@@ -380,19 +380,19 @@ KPLIB_resistance_ambush_chance = 25;
 */
 
 // Time in minutes until a resource crate is produced, when resources multiplier is set to 1.
-KPLIB_production_interval = 2;
+KPLIB_production_interval = 1;
 
 // Percentage of resources you get back from recycling.
 KPLIB_recycling_percentage = 0.7;
 
 // Multiplier for defenders in buildings.
-KPLIB_defended_buildingpos_part = 1.4;
+KPLIB_defended_buildingpos_part = 1.9;
 
 // Time in seconds how long a captured sector is vulnerable to enemy troops.
 KPLIB_vulnerability_timer = 2200;
 
 // Chance that enemy infantry will surrender after heavy losses are encountered.
-KPLIB_surrender_chance = 80;
+KPLIB_surrender_chance = 75;
 
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
 KPLIB_battlegroup_clearance = [
