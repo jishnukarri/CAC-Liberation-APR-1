@@ -71,12 +71,14 @@ force force ace_common_settingProgressBarLocation = 0;
 force force ace_common_swayFactor = 1;
 
 // ACE Cook-off
-force force ace_cookoff_ammoCookoffDuration = 1;
+force force ace_cookoff_ammoCookoffDuration = 0.2;
+force force ace_cookoff_cookoffDuration = 0.2;
 force force ace_cookoff_destroyVehicleAfterCookoff = false;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
 force force ace_cookoff_enableFire = true;
-force force ace_cookoff_probabilityCoef = 1;
+force force ace_cookoff_probabilityCoef = 0.2;
+force force ace_cookoff_removeAmmoDuringCookoff = true;
 
 // ACE Crew Served Weapons
 force force ace_csw_ammoHandling = 2;

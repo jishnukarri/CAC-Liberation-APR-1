@@ -244,16 +244,16 @@ KPLIB_cap_playerSide = 100;
 KPLIB_cap_enemySide = 180;
 
 // Cap for enemy battlegroups.
-KPLIB_cap_battlegroup = 150;
+KPLIB_cap_battlegroup = 75;
 
 // Cap for enemy patrols.
-KPLIB_cap_patrol = 150;
+KPLIB_cap_patrol = 75;
 
 // Size of enemy battlegroups.
-KPLIB_battlegroup_size = 6;
+KPLIB_battlegroup_size = 4;
 
 // Cap for civilian vehicles traveling between sectors.
-KPLIB_civilians_amount = 10;
+KPLIB_civilians_amount = 5;
 
 
 /*

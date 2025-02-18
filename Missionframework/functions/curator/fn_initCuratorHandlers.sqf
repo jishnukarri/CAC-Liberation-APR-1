@@ -14,7 +14,7 @@
     Returns:
         Function reached the end [BOOL]
 
-
+*/
 #define ZEUSVAR(var) (format ["KPLIB_zeus_%1", var])
 
 if (isServer) then {
@@ -113,4 +113,3 @@ if (hasInterface) then {
 };
 
 true
-*/
