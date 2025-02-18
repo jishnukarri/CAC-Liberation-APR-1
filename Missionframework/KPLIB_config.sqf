@@ -224,7 +224,7 @@ KPLIB_range_sectorCapture = 200;
 KPLIB_range_radioTowerScan = 2500;
 
 // Minimum distance to next FOB.
-KPLIB_distance_fob = 1000;
+KPLIB_distance_fob = 800;
 
 // Minimum distance to next sector.
 KPLIB_distance_sector = KPLIB_range_sectorCapture + KPLIB_range_fob;
@@ -241,7 +241,7 @@ KPLIB_distance_sector = KPLIB_range_sectorCapture + KPLIB_range_fob;
 KPLIB_cap_playerSide = 100;
 
 // Cap for enemy units.
-KPLIB_cap_enemySide = 180;
+KPLIB_cap_enemySide = 100;
 
 // Cap for enemy battlegroups.
 KPLIB_cap_battlegroup = 75;
