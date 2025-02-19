@@ -20,7 +20,7 @@ params [
 ];
 
 if (!isNull _player) then {
-    [true, "KPLIB_createZeus", [_player, KPLIB_param_zeusLimited]] remoteExecCall ["BIS_fnc_callScriptedEventHandler", 2];
+    [true, "KPLIB_createZeus", [_player, false]] remoteExecCall ["BIS_fnc_callScriptedEventHandler", 2];
 };
 
 true
