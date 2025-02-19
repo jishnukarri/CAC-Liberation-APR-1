@@ -99,6 +99,7 @@ _player addAction [
 ];
 
 // Arsenal
+/*
 _player addAction [
     ["<t color='#FFFF00'>", localize "STR_ARSENAL_ACTION", "</t><img size='2' image='res\ui_arsenal.paa'/>"] joinString "",
     "scripts\client\actions\open_arsenal.sqf",
@@ -118,7 +119,7 @@ _player addAction [
         && {build_confirmed isEqualTo 0}
     "
 ];
-
+*/
 // Build
 _player addAction [
     ["<t color='#FFFF00'>", localize "STR_BUILD_ACTION", "</t><img size='2' image='res\ui_build.paa'/>"] joinString "",

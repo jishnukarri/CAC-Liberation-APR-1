@@ -36,7 +36,21 @@ KPLIB_objectInits = [
         {{[_x, [[_this], true]] remoteExecCall ["addCuratorEditableObjects", 2]} forEach allCurators;},
         true
     ],
-
+        //ace box arsenal
+    [
+        [KPLIB_b_arsenal, KPLIB_b_fobBuilding],
+        {
+            [_this] spawn {
+                params ["_arsenal"];
+                waitUntil {sleep 0.1; time > 0};
+                if (KPLIB_ace && KPLIB_param_arsenalType) then {
+                    [_arsenal, false] remoteExecCall ["ace_arsenal_fnc_initBox", 0, _arsenal];
+                } else {
+                    ["AmmoboxInit", [_arsenal, false]] spawn BIS_fnc_arsenal;
+                };
+            };
+        }
+    ],
     // Add ViV and build action to FOB box/truck
     [
         [KPLIB_b_fobBox, KPLIB_b_fobTruck],
