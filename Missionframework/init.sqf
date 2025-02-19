@@ -27,7 +27,7 @@ if (KPPLM_CBA && KPLIB_param_playerMenu) then {
     [] execVM "GREUH\scripts\GREUH_activate.sqf";
 };
 
-CHVD_allowNoGrass = true; // Set 'false' if you want to disable "Low" option for terrain (default: true)
+CHVD_allowNoGrass = false; // Set 'false' if you want to disable "Low" option for terrain (default: true)
 
 // Temperature and humidity changes
 [{

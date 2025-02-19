@@ -81,13 +81,13 @@ class Params {
         title = $STR_PARAM_AUTODANGER;
         values[] = {1, 0};
         texts[] = {$STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED};
-        default = 1;
+        default = 0;
     };
     class DayDuration {
         title = $STR_PARAMS_DAYDURATION;
         values[] = {8, 6, 4, 3, 2, 1};
         texts[] = {"3","4","6","8","12","24"};
-        default = 1;
+        default = 2;
     };
     class ShorterNights {
         title = $STR_SHORTER_NIGHTS_PARAM;
@@ -99,7 +99,7 @@ class Params {
         title = $STR_WEATHER_PARAM;
         values[] = {1, 2, 3};
         texts[] = {$STR_WEATHER_PARAM1, $STR_WEATHER_PARAM2, $STR_WEATHER_PARAM3};
-        default = 2;
+        default = 1;
     };
     class VanillaFog {
         title = $STR_FOG_PARAM;
