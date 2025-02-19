@@ -55,7 +55,7 @@
 	31 = Project OPFOR African Militia ("better equipped")
 	32 = Lingor Resistencia
     33 = Armed Forces of Chernarus (BLUFOR)
-    34 = CUP US Marine Corps Early 2000s (Desert) - Iraq
+    34 = CUP US Marine Corps Early 2000s (Desert) - Iraq - (notadded yet it's just custom.sqf)
 */
 KPLIB_presetPlayer = 0;
 
@@ -85,7 +85,7 @@ KPLIB_presetPlayer = 0;
 	21 = Project OPFOR African Militia ("better equipped")
 	22 = Lingor Revolución
     23 = Chernarus Armed Forces (OPFOR)
-    24 = CUP Iraqi Armed Forces (Desert)
+    24 = CUP Iraqi Armed Forces (Desert) - (notadded yet it's just custom.sqf)
 */
 KPLIB_presetEnemy = 0;
 
@@ -141,7 +141,7 @@ KPLIB_presetCivilians = 6;
 	17 = Central africa (para) military
 	18 = Lingor
     19 = Armed Forces of Chernarus (BLUFOR)
-    20 = CUP USMC Early 2000s (Desert) - Iraq
+    20 = CUP USMC Early 2000s (Desert) - Iraq(notadded yet it's just custom.sqf)
 */
 KPLIB_presetArsenal = 1;
 

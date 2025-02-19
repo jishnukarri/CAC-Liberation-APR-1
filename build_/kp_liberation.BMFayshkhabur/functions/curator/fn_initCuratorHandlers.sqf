@@ -13,14 +13,15 @@
 
     Returns:
         Function reached the end [BOOL]
-
 */
 #define ZEUSVAR(var) (format ["KPLIB_zeus_%1", var])
 
 if (isServer) then {
 
     // delete old Liberation mission placed Zeus module
-    deleteVehicle zm1;
+    if (!isNull (missionNamespace getVariable ['zm1', objNull])) then {
+        deleteVehicle zm1;
+    };
 
     // add curator assign EventHandler
     [true, "KPLIB_createZeus", {
@@ -41,30 +42,23 @@ if (isServer) then {
 
         // remove currently assigned curator
         private _oldZeus = getAssignedCuratorLogic _player;
-        unassignCurator _oldZeus;
-        deleteVehicle _oldZeus;
+        if (!isNull _oldZeus) then {
+            unassignCurator _oldZeus;
+            deleteVehicle _oldZeus;
+        };
 
         private _group = createGroup [sideLogic, true];
         private _zeus = _group createUnit ["ModuleCurator_F", [-7580, -7580, 0], [], 0, "NONE"];
         missionNamespace setVariable [ZEUSVAR(_uid), _zeus];
 
-        if (_limited) then {
-            _zeus setVariable ["Addons", 0, true];
-            _zeus setVariable ["BIS_fnc_initModules_disableAutoActivation", false];
+        _zeus setVariable ["Addons", 3, true];
+        _zeus setVariable ["BIS_fnc_initModules_disableAutoActivation", true];
 
-            _zeus setCuratorCoef ["Place", -1e8];
-            _zeus setCuratorCoef ["Edit", -1e8];
-            _zeus setCuratorCoef ["Destroy", -1e8];
-            _zeus setCuratorCoef ["Delete", 0];
-
-            removeAllCuratorAddons _zeus;
-        } else {
-            _zeus setVariable ["Addons", 3, true];
-            _zeus setVariable ["BIS_fnc_initModules_disableAutoActivation", false];
-
-            _zeus setCuratorCoef ["Place", 0];
-            _zeus setCuratorCoef ["Delete", 0];
-        };
+        _zeus setCuratorCoef ["edit", 0];
+        _zeus setCuratorCoef ["place", 0];
+        _zeus setCuratorCoef ["synchronize", 0];
+        _zeus setCuratorCoef ["delete", 0];
+        _zeus setCuratorCoef ["destroy", 0];
 
         _zeus setVariable ["KPLIB_limited", _limited];
 
@@ -79,14 +73,16 @@ if (isServer) then {
             ["_addons", [], [[]]]
         ];
 
-        _zeus addCuratorAddons _addons;
+        if (!isNull _zeus) then {
+            _zeus addCuratorAddons _addons;
+        };
     }] call BIS_fnc_addScriptedEventHandler;
 
     // remove the assigned curator on player disconnect
     addMissionEventHandler ["HandleDisconnect", {
         params ["", "", "_uid"];
         private _zeus = missionNamespace getVariable ZEUSVAR(_uid);
-        if (!isNil "_zeus") then {
+        if (!isNull _zeus) then {
             deleteVehicle _zeus;
             missionNamespace setVariable [ZEUSVAR(_uid), nil];
         };
@@ -100,12 +96,12 @@ if (hasInterface) then {
             ["_limited", false, [true]]
         ];
 
-        if !(_zeus getVariable ["KPLIB_drawCuratorLocations", false]) then {
+        if (!isNull _zeus && !(_zeus getVariable ["KPLIB_drawCuratorLocations", false])) then {
             _zeus setVariable ["KPLIB_drawCuratorLocations", true];
             [_zeus] call BIS_fnc_drawCuratorLocations;
         };
 
-        if (!_limited) then {
+        if (!isNull _zeus && !_limited) then {
             private _allAddons = ("true" configClasses (configFile >> "CfgPatches")) apply {configName _x};
             [true, "KPLIB_activateZeusAddons", [_zeus, _allAddons]] remoteExecCall ["BIS_fnc_callScriptedEventHandler", 2];
         };
