@@ -27,7 +27,7 @@
 KPLIB_b_fobBuilding     = "Land_Cargo_HQ_V3_F";                         // This is the main FOB HQ building.
 KPLIB_b_fobBox          = "Base_WarfareBContructionSite";                     // This is the FOB as a container.
 KPLIB_b_fobTruck        = "B_Truck_01_box_F";                           // This is the FOB as a vehicle.
-KPLIB_b_arsenal         = "AmmoCrates_NoInteractive_Medium";                            // This is the virtual arsenal as portable supply crates.
+KPLIB_b_arsenal         = "B_supplyCrate_F";                            // This is the virtual arsenal as portable supply crates.
 KPLIB_b_mobileRespawn = ["CFP_B_USARMY_2003_HMMWV_Transport_DES_01", "CFP_B_USMC_Zodiac_DES_01", "CFP_B_USARMY_2003_MH_6J_Little_Bird_DES_01"];                           // This is the mobile respawn (and medical) truck.
 KPLIB_b_potato01        = "CFP_B_USARMY_2003_CH_47F_VIV_DES_01";              // This is Potato 01, a multipurpose mobile respawn as a helicopter.
 KPLIB_b_crewUnit        = "CFP_B_USARMY_2003_Crewman_DES_01";                                   // This defines the crew for vehicles.
