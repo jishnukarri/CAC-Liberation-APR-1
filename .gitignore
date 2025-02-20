@@ -48,6 +48,7 @@ Temporary Items
 
 # Build directory
 /build/
+/_build/
 /_tools/build/
 /_tools/node_modules/
 /_tools/package-lock.json
