@@ -1,0 +1,3 @@
+[] call KPLIB_fnc_createCrate;
+[KPLIB_b_crateAmmo] call KPLIB_fnc_createCrate;
+[KPLIB_b_crateFuel] call KPLIB_fnc_createCrate;
