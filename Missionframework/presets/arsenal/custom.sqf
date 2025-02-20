@@ -77,7 +77,7 @@
         "CUP_hgun_Browning_HP",
         "CUP_hgun_Deagle",
         "CUP_hgun_Glock17",
-        "CUP_hgun_Mac10",
+//        "CUP_hgun_Mac10",
 
         //Launchers
         "CUP_launch_Javelin",
@@ -86,13 +86,16 @@
         "CUP_launch_M72A6_Special",
         "CUP_launch_Mk153Mod0",
         "CUP_launch_Mk153Mod0_blk",
-        "CUP_m2_carry",
-        "ace_csw_m220CarryTripod",
-        "CUP_TOW2_carry",
-        "ace_csw_kordCarryTripod",
-        "CUP_DSHKM_carry",
+
+        //CSW
         "CUP_2b14_carry",
-        "ace_dragon_super"
+        "ace_csw_carryMortarBaseplate",
+        "ace_csw_kordCarryTripod",
+        "ace_csw_kordCarryTripodLow",
+        "CUP_m2_carry",
+        "CUP_TOW2_carry",
+        "ace_dragon_super",
+        "ace_csw_m220CarryTripod"
     ];
     
     KPLIB_arsenalMagazines = [
@@ -101,7 +104,7 @@
         "CUP_21Rnd_9x19_M17_Coyote",
         "CUP_17Rnd_9x19_glock17",
         "CUP_hgun_Deagle",
-        "CUP_30Rnd_45ACP_MAC10_M",
+        //"CUP_30Rnd_45ACP_MAC10_M",
         "CUP_13Rnd_9x19_Browning_HP",
         "ACE_16Rnd_9x19_mag",
         //M16 Ammo
@@ -157,6 +160,7 @@
         "ACE_40mm_Flare_white",
         "ACE_40mm_Flare_green",
         "ACE_40mm_Flare_red",
+        "CUP_7Rnd_50AE_Deagle",
         //M249 Ammo
         "CUP_100Rnd_TE4_Green_Tracer_556x45_M249",
         "CUP_100Rnd_TE4_Red_Tracer_556x45_M249",
@@ -194,7 +198,18 @@
         //Drones
         "Item_Mavic",
         "Item_Mavic3T",
-        "DRNP_AR2_battery"
+        "DRNP_AR2_battery",
+
+        //CSW
+        "ace_csw_50Rnd_127x108_mag",
+        "ace_csw_100Rnd_127x99_mag",
+        "ace_csw_100Rnd_127x99_mag_green",
+        "CUP_compats_122mm_wp",
+        "ace_csw_20Rnd_20mm_G_belt",
+        "ACE_1Rnd_82mm_Mo_HE",
+        "ACE_1Rnd_82mm_Mo_Illum",
+        "ACE_1Rnd_82mm_Mo_Smoke",
+        "CUP_compats_TOW2_M"
     ];
     
     KPLIB_arsenalItems = [
