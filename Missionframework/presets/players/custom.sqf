@@ -112,7 +112,8 @@ KPLIB_b_vehHeavy = [
     ["CFP_B_USARMY_2003_M1A2_Abrams_TUSK_DES_01",35,35,35],
     ["CFP_B_USARMY_2003_M6_Linebacker_DES_01",50,50,50],
     ["CFP_B_USARMY_2003_HMMWV_Avenger_DES_01",100,100,100],
-    ["CFP_B_USARMY_2003_M270_MLRS_HE_DES_01",150,200,200]
+    ["CFP_B_USARMY_2003_M270_MLRS_HE_DES_01",150,200,200],
+    ["CFP_B_USARMY_2003_M270_MLRS_DPICM_DES_01",150,200,200]
 ];
 
 
@@ -281,7 +282,7 @@ KPLIB_b_objectsDeco = [
 
 
 KPLIB_b_vehSupport = [
-    [KPLIB_b_arsenal,100,200,0],
+    [KPLIB_b_arsenal,0,10,0],
     [(KPLIB_b_mobileRespawn select 0),50,0,0],
     [(KPLIB_b_mobileRespawn select 1),0,50,0],
 	[(KPLIB_b_mobileRespawn select 2),0,0,50],
