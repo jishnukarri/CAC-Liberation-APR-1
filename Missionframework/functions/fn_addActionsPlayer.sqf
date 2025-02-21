@@ -111,7 +111,7 @@ _player addAction [
         isNull (objectParent _originalTarget)
         && {alive _originalTarget}
         && {
-            _originalTarget getVariable ['KPLIB_fobDist', 99999] < 20
+            _originalTarget getVariable ['KPLIB_fobDist', 99999] < 100
             || {_originalTarget getVariable ['KPLIB_isNearArsenal', false]}
             || {_originalTarget getVariable ['KPLIB_isNearStart', false]}
         }
@@ -153,7 +153,7 @@ _player addAction [
         isNull (objectParent _originalTarget)
         && {alive _originalTarget}
         && {
-            _originalTarget getVariable ['KPLIB_fobDist', 99999] < 20
+            _originalTarget getVariable ['KPLIB_fobDist', 99999] < 100
             || {_originalTarget getVariable ['KPLIB_isNearStart', false]}
         }
         && {

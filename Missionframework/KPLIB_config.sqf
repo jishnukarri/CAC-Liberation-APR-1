@@ -191,7 +191,7 @@ KPLIB_save_key = "KP_LIBERATION_" + (toUpperANSI worldName) + "_SAVEGAME";
 KPLIB_save_paramKey = "KP_LIBERATION_" + (toUpperANSI worldName) + "_SAVE_PARAMS";
 
 // Interval in seconds for automatic save.
-KPLIB_save_interval = 60;
+KPLIB_save_interval = 120;
 
 
 /*
@@ -202,7 +202,7 @@ KPLIB_save_interval = 60;
 */
 
 // Build range around the main FOB building.
-KPLIB_range_fob = 200;
+KPLIB_range_fob = 600;
 
 // Altitude in metres for the HALO jump.
 KPLIB_height_halo = 1000;

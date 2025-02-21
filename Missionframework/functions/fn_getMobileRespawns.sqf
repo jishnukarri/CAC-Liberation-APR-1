@@ -20,7 +20,7 @@ private _respawn_trucks = vehicles select {
 	{alive _x} && 
 	{ 
 	(_x distance2d startbase > 300) 
-	&& {(_x distance2d ([getPos _x] call KPLIB_fnc_getNearestFob)) > 100} 
+	&& {(_x distance2d ([getPos _x] call KPLIB_fnc_getNearestFob)) > 500} 
 	} && 
 	{abs (speed _x) < 5} 
 };
