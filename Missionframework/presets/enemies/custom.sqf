@@ -81,9 +81,7 @@ KPLIB_o_armyVehicles = [
     "CFP_O_IQARMY_BMP_2_01", 
     "CFP_O_IQARMY_UAZ_SPG_01", 
     "CFP_O_IQARMY_T55_01", 
-    "CFP_O_IQARMY_UAZ_AGS_30_01", 
-    "CFP_O_IQARMY_ZSU_23_4_01"
-	
+    "CFP_O_IQARMY_UAZ_AGS_30_01"	
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
@@ -91,15 +89,17 @@ KPLIB_o_armyVehiclesLight = [
     "CFP_O_IQARMY_BMP_2_01", 
     "CFP_O_IQARMY_UAZ_SPG_01", 
     "CFP_O_IQARMY_UAZ_AGS_30_01", 
-    "CFP_O_IQARMY_BTR_60PB_01"                                        // BTR-K Kamysh
+    "CFP_O_IQARMY_BTR_60PB_01",                                       // ZSU-39 Tigris
+    "CFP_O_IQARMY_Podnos_2B14_01",
+    "CFP_O_IQARMY_BM_21_01"                                        // BTR-K Kamysh
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
-    "CFP_O_IQARMY_ZSU_23_4_01", 
     "CFP_O_IQARMY_T72_01", 
-    "CFP_O_IQARMY_BTR_60PB_01"                                       // ZSU-39 Tigris
-
+    "CFP_O_IQARMY_BTR_60PB_01",                                       // ZSU-39 Tigris
+    "CFP_O_IQARMY_Podnos_2B14_01",
+    "CFP_O_IQARMY_BM_21_01"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
@@ -109,19 +109,15 @@ KPLIB_o_battleGrpVehiclesLight = [
     "CFP_O_IQARMY_UAZ_Open_01", 
     "CFP_O_IQARMY_UAZ_Metis_01",
     "CFP_O_IQARMY_UAZ_SPG_01",
-    "CFP_O_IQARMY_MT_LB_01"
+    "CFP_O_IQARMY_MT_LB_01",
+    "CFP_O_IQARMY_Podnos_2B14_01"
+
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur. */
 KPLIB_o_troopTransports = [
-    "CFP_O_IQARMY_UAZ_SPG_01", 
-    "CFP_O_IQARMY_UAZ_Metis_01", 
-    "CFP_O_IQARMY_UAZ_AGS_30_01", 
-    "CFP_O_IQARMY_UAZ_DShKM_01", 
-    "CFP_O_IQARMY_BMP_2_01", 
-    "CFP_O_IQARMY_MT_LB_01", 
-    "CFP_O_IQARMY_Ural_ZU_23_01"                              // Po-30 Orca (Armed)
+    "CFP_O_IQARMY_Ural_01"                             // Po-30 Orca (Armed)
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
@@ -154,17 +150,15 @@ KPLIB_o_turrets_AT = [
 
 // Enemy defence turrets that will be spawned in sectors.
 KPLIB_o_turrets_AA = [
-    "CFP_O_IQARMY_ZU_23_01", 
     "CFP_O_IQARMY_Igla_AA_Pod_01"
 ];
 
 // Enemy defence turrets that will be spawned in sectors.
 KPLIB_o_turrets_MORTAR = [
-    "CFP_O_IQARMY_Podnos_2B14_01"
 ];
 
 // Enemy SAM turrets that will be spawned in the back country
 KPLIB_o_turrets_SAM = [
-    ["pook_SA2_spawnerOPFOR"], 
-    ["pook_SA3_spawnerOPFOR"]
+    ["CFP_O_IQARMY_ZSU_23_4_01"], 
+    ["CFP_O_IQARMY_Ural_ZU_23_01"]
 ];

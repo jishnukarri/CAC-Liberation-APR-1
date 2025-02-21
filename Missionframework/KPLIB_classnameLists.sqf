@@ -460,7 +460,11 @@ KPLIB_param_supportModule_artyVeh = [
     "uns_M30_107mm_mortar",
     "uns_Type55_mortar",
 	"vn_b_army_static_mortar_m2",
-    "vn_b_army_static_mortar_m29"
+    "vn_b_army_static_mortar_m29",
+    "CFP_B_USARMY_2003_M119_DES_01",
+    "CFP_B_USARMY_2003_M252_81mm_Mortar_DES_01",
+    "CFP_B_USARMY_2003_M270_MLRS_HE_DES_01",
+    "CFP_B_USARMY_2003_M270_MLRS_DPICM_DES_01"
 ];
 
 // Objects which are spawned as intel objects for pickup

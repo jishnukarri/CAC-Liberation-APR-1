@@ -281,7 +281,7 @@ KPLIB_b_objectsDeco = [
 
 
 KPLIB_b_vehSupport = [
-    [KPLIB_b_arsenal,100,200,0],
+    [KPLIB_b_arsenal,0,10,0],
     [(KPLIB_b_mobileRespawn select 0),50,0,0],
     [(KPLIB_b_mobileRespawn select 1),0,50,0],
 	[(KPLIB_b_mobileRespawn select 2),0,0,50],
