@@ -26,6 +26,31 @@ if (KPPLM_CBA && KPLIB_param_playerMenu) then {
 } else {
     [] execVM "GREUH\scripts\GREUH_activate.sqf";
 };
+// FFE
+// Leaving that in as a template for now
+RydFFE_Debug = false;
+RydFFE_ShellView = false;
+RydFFE_ArtyShells = 5;
+RydFFE_Amount = 2;
+RydFFE_FOAccGain = 10;
+RydFFE_Safe = (50);
+RydFFE_FOClass = ([
+    "CFP_O_IQARMY_Squad_Leader_01", 
+    "CFP_O_IQARMY_Grenadier_01", 
+    "CFP_O_IQARMY_Machine_Gunner_01", 
+    "CFP_O_IQARMY_Asst_Machine_Gunner_01", 
+    "CFP_O_IQARMY_Auto_Rifleman_01", 
+    "CFP_O_IQARMY_Rifleman_AT_01", 
+    "CFP_O_IQARMY_RG_Team_Leader_01", 
+    "CFP_O_IQARMY_RG_Grenadier_01", 
+    "CFP_O_IQARMY_RG_Machine_Gunner_01", 
+    "CFP_O_IQARMY_RG_Asst_Machine_Gunner_01", 
+    "CFP_O_IQARMY_RG_Auto_Rifleman_01"
+]);
+RydFFE_Add_Rocket = ["CFP_O_IQARMY_BM_21_01"];
+RydFFE_Add_Mortar = ["CFP_O_IQARMY_Podnos_2B14_01"];
+
+nul = [] execVM "RYD_FFE\FFE.sqf";
 
 CHVD_allowNoGrass = false; // Set 'false' if you want to disable "Low" option for terrain (default: true)
 
