@@ -90,12 +90,16 @@ KPLIB_o_armyVehiclesLight = [
     "CFP_O_IQARMY_UAZ_SPG_01", 
     "CFP_O_IQARMY_UAZ_AGS_30_01", 
     "CFP_O_IQARMY_BTR_60PB_01",                                       // ZSU-39 Tigris
-    "CFP_O_IQARMY_Podnos_2B14_01",
-    "CFP_O_IQARMY_BM_21_01"                                        // BTR-K Kamysh
-];
+    "CFP_O_IQARMY_Podnos_2B14_01"];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
+    "CFP_O_IQARMY_UAZ_DShKM_01", 
+    "CFP_O_IQARMY_UAZ_01", 
+    "CFP_O_IQARMY_UAZ_Open_01", 
+    "CFP_O_IQARMY_UAZ_Metis_01",
+    "CFP_O_IQARMY_UAZ_SPG_01",
+    "CFP_O_IQARMY_MT_LB_01",
     "CFP_O_IQARMY_T72_01", 
     "CFP_O_IQARMY_BTR_60PB_01",                                       // ZSU-39 Tigris
     "CFP_O_IQARMY_Podnos_2B14_01",
