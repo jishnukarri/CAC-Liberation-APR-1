@@ -10,7 +10,7 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/jishnukarri/CAC-Liberation-APR-1.svg)](https://github.com/jishnukarri/CAC-Liberation-APR-1/pulls)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/jishnukarri/CAC-Liberation-APR-1.svg)](https://github.com/jishnukarri/CAC-Liberation-APR-1/pulls?q=is%3Apr+is%3Aclosed)
 ## About
-CAC Liberation APR is a fork of [a fork](https://github.com/moistbois/Moist-Liberation-APR) of a [a fork](https://github.com/Apricot-ale/KP-Liberation-APR) of [a fork](https://github.com/KillahPotatoes/KP-Liberation) of [a fork](https://github.com/GreuhZbug/greuh_liberation.Altis). We originally lightly tweaked [KP Liberation](https://github.com/KillahPotatoes/KP-Liberation) missions but decided to instead build on top of [KP Liberation APR](https://github.com/Apricot-ale/KP-Liberation-APR). Moistbois's fork has many implemented features of KP Liberation stated for v0.96.8 that were never released, along with some curated PRs, and optimizations. This gave us a great base to work off of to add new features.
+CAC Liberation APR is a fork of [a fork](https://github.com/moistbois/Moist-Liberation-APR) of [a fork](https://github.com/Apricot-ale/KP-Liberation-APR) of [a fork](https://github.com/KillahPotatoes/KP-Liberation) of [a fork](https://github.com/GreuhZbug/greuh_liberation.Altis). We originally lightly tweaked [KP Liberation](https://github.com/KillahPotatoes/KP-Liberation) missions but decided to instead build on top of [KP Liberation APR](https://github.com/Apricot-ale/KP-Liberation-APR). Moistbois's fork has many implemented features of KP Liberation stated for v0.96.8 that were never released, along with some curated PRs, and optimizations. This gave us a great base to work off of to add new features.
 
 You can support the original developer of KP Liberation via Paypal [here](https://www.paypal.me/wyqer).
 
@@ -36,8 +36,3 @@ On top of [KP Liberation's features](https://github.com/moistbois/Moist-Liberati
 * CH View Distance has "Standard" as the lowest option to disallow removing grass, [thanks to champ-1](https://forums.bohemia.net/forums/topic/175757-ch-view-distance-addon/).
 * Change vehicle camos at workbenches, thanks to Vehicle Appearance Manager GUI. Credits to [UNIT_normal](https://forums.bohemia.net/forums/topic/224041-release-vehicle-appearance-manager-gui/)
 *Access Vehicle Inventory through our menu(IN THE WORKS)
-## Watch
-We regularly stream our campaigns and sometimes even development. You can watch us at:
-* [Pantteri](https://www.twitch.tv/pantrh)
-* [CarlMylo](https://www.twitch.tv/CarlMylo)
-* [Phantom](https://www.twitch.tv/phantom_116_)
