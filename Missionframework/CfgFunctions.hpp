@@ -25,6 +25,7 @@ class KPLIB {
         class createManagedUnit         {};
         class crGetMulti                {};
         class crGlobalMsg               {};
+        class createRoadblock           {};
         class doSave                    {};
         class fullHeal                  {};
         class fillStorage               {};

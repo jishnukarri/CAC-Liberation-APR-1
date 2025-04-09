@@ -184,7 +184,15 @@ KPLIB_o_squadStd        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegu
 KPLIB_o_squadInf        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_heavyGunner, KPLIB_o_heavyGunner, KPLIB_o_marksman, KPLIB_o_sharpshooter, KPLIB_o_sniper];
 KPLIB_o_squadTank       = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_riflemanLAT, KPLIB_o_riflemanLAT, KPLIB_o_atSpecialist, KPLIB_o_atSpecialist, KPLIB_o_atSpecialist];
 KPLIB_o_squadAir        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_riflemanLAT, KPLIB_o_riflemanLAT, KPLIB_o_aaSpecialist, KPLIB_o_aaSpecialist, KPLIB_o_aaSpecialist];
-KPLIB_o_patrol          = [KPLIB_o_marksman, KPLIB_o_grenadier];
+KPLIB_o_patrol          = [KPLIB_o_lightPatrol, KPLIB_o_heavyPatrol, KPLIB_o_specializedPatrol];
+KPLIB_o_roadblock = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_heavyGunner, KPLIB_o_marksman, KPLIB_o_grenadier, KPLIB_o_riflemanLAT, KPLIB_o_atSpecialist];
+
+/*
+    Opfor Patrol compositions
+*/
+KPLIB_o_lightPatrol = [KPLIB_o_marksman, KPLIB_o_grenadier, KPLIB_o_riflemanLAT];
+KPLIB_o_heavyPatrol = [KPLIB_o_squadLeader, KPLIB_o_machinegunner, KPLIB_o_heavyGunner, KPLIB_o_marksman];
+KPLIB_o_specializedPatrol = [KPLIB_o_marksman, KPLIB_o_atSpecialist, KPLIB_o_aaSpecialist];
 
 /*
     Liberation specific collections

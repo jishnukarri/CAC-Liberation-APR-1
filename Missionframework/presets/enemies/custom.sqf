@@ -135,7 +135,7 @@ KPLIB_o_planes = [
     "CFP_O_IQARMY_Su_25_Frogfoot_01"                                          // To-201 Shikra
 ];
 
-// Enemy defence turrets that will be spawned in sectors.
+// Enemy defence turrets that will be spawned in sectors. only choose raised
 KPLIB_o_turrets_HMG = [
     "CFP_O_IQARMY_DShKM_01", 
     "CFP_O_IQARMY_Rifleman_01", 
